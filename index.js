@@ -51,6 +51,7 @@ function lightbox_open() {
   document.getElementById('fade').style.display = 'block';
   document.getElementById('leftArrow').style.visibility = 'visible';
   document.getElementById('rightArrow').style.visibility = 'visible';
+  document.getElementById('reviews').style.visibility = 'visible';
   lightBoxVideo.play();
 }
 
@@ -60,6 +61,8 @@ function lightbox_close() {
   document.getElementById('fade').style.display = 'none';
   document.getElementById('leftArrow').style.visibility = 'hidden';
   document.getElementById('rightArrow').style.visibility = 'hidden';
+  document.getElementById('reviews').style.visibility = 'hidden';
   lightBoxVideo.pause();
   lightBoxVideo.pause();
 }
+
