@@ -1,0 +1,36 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<div class="bgimg-1" id="backMat">
+  <div>
+    <div class="box1" id="place1"><a href="#" onclick="boxa()"></a></div>
+    <div class="box2" id="place2"><a href="#" onclick="boxb()"></a></div>
+    <div class="box3" id="place3"><a href="#" onclick="boxc()"></a></div>
+    <div class="video1" id="vid1" style="position: absolute;background-color: black;width:5vw;height: 6vh;top: 20vh;left: 50vw;visibility: hidden;" onclick="lightbox_open()"><</div>
+    <div class="title" id="titles" style="position: absolute;top: 1vh;left: 42vw;visibility: hidden;"><h1 class="text-bla" id="text-blabla">Waterbar</h1></div>
+    <div class="video1" id="vid1"></div>
+    <div class="video1" id="vid1"></div>
+  </div>
+  <div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" width="200" controls>
+      <source src="./IMG_5295.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+</div>
+<div id="leftArrow" style="position: absolute;left: 40vw;top: 45vh;visibility: hidden;"><img src="./whiteLeftArrow.png" style="width: 80px;"></div>
+<div id="rightArrow" style="position: absolute;left: 58vw;top: 45vh;visibility: hidden;"><img src="./whiteRightArrow.png" style="width: 80px;"></div>
+
+
+<div id="fade" onClick="lightbox_close();"></div>
+
+</div>
+
+
+
+
+</body></html>

@@ -1,0 +1,157 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heat {
+  position: relative;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("background1.png");
+  height: 100%;
+}
+.box1 {
+  position: absolute;
+  top: 18vh;
+  left: 47vw;
+  width: 200px;
+  height: 200px;
+  opacity: 0.60;
+  background: radial-gradient(farthest-side,orange, yellow, transparent) center no-repeat;
+  animation:pulse 2s linear infinite alternate;
+}
+.box1:hover{
+  opacity: 0.80;
+}
+.box2 {
+  position: absolute;
+  top: 50vh;
+  left: 70vw;
+  width: 300px;
+  height: 300px;
+  opacity: 0.60;
+  background: radial-gradient(farthest-side,red, orange, transparent) center no-repeat;
+  animation:pulse 2s linear infinite alternate;
+}
+.box2:hover{
+  opacity: 0.80;
+}
+.box3 {
+  position: absolute;
+  top: 64vh;
+  left: 32vw;
+  width: 150px;
+  height: 150px;
+  opacity: 0.60;
+  background: radial-gradient(farthest-side,yellow, green, transparent) center no-repeat;
+  animation:pulse 2s linear infinite alternate;
+}
+.box3:hover{
+  opacity: 0.80;
+}
+@keyframes pulse{
+  from {
+    background-size:50% 50%;
+  }
+  to {
+    background-size:100% 100%;
+  }
+}
+a {
+  display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+
+
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0;
+  filter: alpha(opacity=80);
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -76px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+
+.test:hover ~ .test2 {
+  display: none;
+}
+.text-bla {
+  background: linear-gradient( to right,  hsl(200 0% 100%), /* 200 100% 62% */ 
+                                          hsl(360 0% 100%) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 3vh;
+  font-family: helvetica, sans-serif;
+  line-height: 0.7;
+  font-size: 5vw;
+  text-align: left;
+  margin-top: 5vh;
+  font-weight: 700;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
